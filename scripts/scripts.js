@@ -42,6 +42,11 @@ function clearBoard() {
   scetchBoard.innerHTML = "";
 };
 
+function changeSliderValue(NumberOfBlocks) {
+  sliderOutput.textContent = NumberOfBlocks;
+  sliderInput.value = NumberOfBlocks;
+}
+
 function randomRGBColor() {
 
   function randomOneColor() {
@@ -83,6 +88,8 @@ function createTable(e) {
 
   if(e.target.value !== undefined && 
      e.target.value !== BUTTON_HAS_NO_VALUE) elementsInRow = e.target.value;
+
+  changeSliderValue(elementsInRow);
 
   for (let i = 0; i < elementsInRow ** 2; i++) {
     boardSection = document.createElement("div");
