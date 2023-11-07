@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    
+    <h1>Etch-a-Scetch</h1>
+
+    <section class="main-section">
+      <div class="content wrapper">
+        <div class="color-used">
+          <p>Color:</p>
+          <div class="color-display"></div>
+        </div>
+
+        <div class="color-wrapper settings">
+          <button class="color-white" value="white">White</button>
+          <button class="color-black" value="black">Black</button>
+          <button class="color-rainbow" value="rainbow">Rainbow</button>
+        </div>
+
+        <div class="board-wrapper settings">
+          <button class="small" value="16">16x16 blocks</button>
+          <button class="medium" value="32">32x32 blocks</button>
+          <button class="large" value="64">64x64 blocks</button>
+          <button class="refresh">Refresh Board</button>
+        </div>
+
+        <div class="slider-container">
+          <p>Amount of blocks in row:</p>
+          <div class="slider-value">16</div>
+          <input type="range" id="slider" min="16" max="64" value="16" />
+        </div>
+      </div>
+      <div class="scetch-board wrapper"></div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(320deg, #eb92be,#ffef78, #63c9b4);
+  font-size: 20px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  box-shadow: 2px 2px 3px;
+}
+
+.wrapper {
+  box-shadow: 2px 3px 4px;
+}
+
+.main-section {
+  display: flex;
+  gap: 10%;
+  margin: 40px;
+}
+
+.content {
+  width: 20vw;
+  padding-top: 30px;
+  background: linear-gradient(to bottom, #99ccff 0%, #ff66cc 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+  user-select: none;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.color-used {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.color-display {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px;
+  background: black;
+}
+
+.scetch-board {
+  min-width: 600px;
+  min-height: 600px;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque;
+}
+
+.slider-container {
+  margin-bottom: 20px;
+}
