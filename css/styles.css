@@ -53,7 +53,7 @@ button {
   gap: 5px;
   padding: 10px;
   box-shadow: 2px 2px 3px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .color-used {
@@ -72,13 +72,11 @@ button {
 }
 
 .scetch-board {
-  min-width: 600px;
-  min-height: 600px;
-  max-width: 600px;
-  max-height: 600px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
-  background-color: bisque;
+  background: bisque;
 }
 
 .slider-container {
